@@ -42,14 +42,14 @@ img {
 
 .text-title {
   font-family: Arc;
-  font-size: 62px;
+  font-size: 3.875em;
   color: inherit;
 }
 
 .text-style {
   font-family: Rob;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125em;
   color: inherit;
 }
 
@@ -83,8 +83,9 @@ img {
 }
 
 .header__right-item {
-  display: inherit;
   padding: 22px 0;
+  max-width: 379px;
+  display: inherit;
   color: black;
 }
 
@@ -113,6 +114,7 @@ img {
 
 .aside__h1 {
   margin-bottom: 25px;
+  max-height: 128px;
   line-height: 64px;
 }
 
@@ -127,14 +129,12 @@ img {
     transform: scale(1.1);
     background-color: var(--bcg-accent);
     color: var(--bcg-dark);
-    font-weight: 900;
   }
 
   100% {
     transform: scale(1);
     background-color: var(--bcg-dark);
     color: var(--bcg-accent);
-    font-weight: 500;
   }
 }
 
@@ -147,6 +147,7 @@ img {
   border: none;
   font-family: Rob;
   font-size: 24px;
+  font-weight: 700;
 }
 
 .aside__btn:hover {
