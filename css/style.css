@@ -1,0 +1,151 @@
+/* Общие настройки */
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  --bcg-accent: #F8F200;
+  --bcg-dark: #000;
+  --bcg-grey: #FFFFFF;
+  --bcg-ber: #00ccff;
+  ;
+
+}
+
+@font-face {
+  font-family: Arc;
+  src: url(../fonts/ofont.ru_Archangelsk.ttf);
+}
+
+@font-face {
+  font-family: Rob;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+.text-title {
+  font-family: Arc;
+  font-size: 62px;
+  color: inherit;
+}
+
+.text-style {
+  font-family: Rob;
+  font-weight: 400;
+  font-size: 18px;
+  color: inherit;
+}
+
+/* Шапка */
+
+.header {
+  position: relative;
+  padding-top: 20px;
+  height: 1000px;
+  background-image: url(../img/background-heder.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header__flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.header__left-item {
+  max-width: 296px;
+  max-height: 74px;
+}
+
+.header__right-item {
+  display: inherit;
+  padding-top: 22px;
+  color: black;
+}
+
+.header__link {
+  margin-right: 40px;
+  width: 30px;
+  height: 30px;
+}
+
+.header__link:last-child {
+  margin-right: 0;
+}
+
+.header__link:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.header__aside {
+  max-width: 624px;
+  /* min-height: 369px; */
+  background-color: var(--bcg-accent);
+  clip-path: polygon(8% 0%, 100% 0%, 100% 85%, 92% 100%, 0% 100%, 0% 15%);
+}
+
+.aside__item {
+}
+
+.aside__h1 {
+  margin-bottom: 25px;
+  line-height: 64px;
+}
+
+@keyframes puls {
+  0% {
+    transform: scale(1);
+    background-color: var(--bcg-dark);
+    color: var(--bcg-accent);
+  }
+
+  70% {
+    transform: scale(1.1);
+    background-color: var(--bcg-accent);
+    color: var(--bcg-dark);
+    font-weight: 900;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: var(--bcg-dark);
+    color: var(--bcg-accent);
+    font-weight: 500;
+  }
+}
+
+.aside__btn {
+  padding: 19px 50px;
+  min-width: 272px;
+  min-height: 78px;
+  background-color: var(--bcg-dark);
+  color: #F8F200;
+  border: none;
+  font-family: Rob;
+  font-size: 24px;
+}
+
+.aside__btn:hover {
+  cursor: pointer;
+  animation: puls 3.5s infinite ease-in-out;
+}
