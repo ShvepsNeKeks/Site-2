@@ -82,8 +82,6 @@ h1, h2, p {
   align-self: center;
 }
 
-.header__logo {}
-
 .logo {
   display: block;
   min-width: calc(var(--index) * 9.9);
@@ -96,9 +94,9 @@ h1, h2, p {
   list-style: none;
 }
 
-.header__list-item {}
-
-.header__link {}
+.header__list-item:hover {
+  transform: scale(1.1);
+}
 
 .header__icon {
   min-width: calc(var(--index) * 1);
@@ -126,9 +124,14 @@ h1, h2, p {
 .header__banner-link {
   display: inline-block;
   padding: calc(var(--index) * .8) calc(var(--index) * 1.8);
-  /* max-width: calc(var(--index) * 8.9); */
   font-size: calc(var(--index) * .8);
   text-decoration: none;
   background-color: var(--dark-col);
   color: var(--accet-col);
+  transition: 1.1s;
+}
+
+.header__banner-link:hover {
+  transform: scale(1.03);
+  box-shadow: #000 0 0 35px;
 }
