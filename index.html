@@ -11,9 +11,9 @@
 
 <body>
 
+  <!--Шапка -->
   <header class="header">
     <div class="header__content content">
-
       <nav class="header__nav-container">
         <div class="hader__nav-item">
           <a href="http://127.0.0.1:5500/index.html" class="header__logo">
@@ -67,7 +67,8 @@
               </a>
             </li>
             <li class="header__list-item">
-              <a href="https://twitter.com/CDPROJEKTRED?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="header__link" target="_blank">
+              <a href="https://twitter.com/CDPROJEKTRED?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                class="header__link" target="_blank">
                 <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
                   fill="none">
                   <g clip-path="url(#clip0_12_226)">
@@ -122,11 +123,79 @@
       </nav>
 
       <article class="header__banner-info">
-            <h1 class="header__banner-title title_style">Доступно на всех платформах</h1>
-            <a href="https://www.cdprojektred.com/ru/ru/AAY" class="header__banner-link text_style-1" target="_blank">Узнать больше</a>
+        <h1 class="header__banner-title title_style">Доступно на всех платформах</h1>
+        <a href="https://www.cdprojektred.com/ru/ru/AAY" class="header__banner-link text_style-btn"
+          target="_blank">Узнать больше</a>
       </article>
     </div>
   </header>
+
+  <!-- Описание -->
+  <section class="description">
+    <div class="description__content content">
+      <div class="description__text-content">
+        <h2 class="description__title title_style">Найт-Сити изменит тебя навсегда!</h2>
+        <p class="description__text text_style-main">Cyberpunk 2077 — приключенческая ролевая игра, действие которой
+          происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V,
+          наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и
+          стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя
+          окружает.</p>
+      </div>
+      <div class="description__img-content">
+        <img class="description__img description__img_grid-item-1" src="img/description-img-1.svg" alt="Photo Game">
+        <img class="description__img description__img_grid-item-2" src="img/description-img-2.svg" alt="Photo Game">
+        <img class="description__img description__img_grid-item-3" src="img/description-img-3.svg" alt="Photo Game">
+      </div>
+  </section>
+
+  <!-- Акция -->
+  <section class="draw">
+    <div class="draw__content content">
+      <div class="draw__text-content">
+        <svg class="draw__icon" xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132"
+          fill="none">
+          <path
+            d="M115.368 48.2876L115.295 49.1105L115.825 49.7446L129.395 66L115.825 82.2554L115.295 82.8895L115.368 83.7124L117.256 105.186L97.277 109.94L96.4285 110.142L95.9991 110.901L85.5571 129.365L66.8205 120.936L65.9972 120.566L65.1748 120.938L46.4406 129.424L36.0009 110.964L35.5715 110.205L34.723 110.003L14.7433 105.248L16.6324 83.7119L16.7045 82.8893L16.1753 82.2554L2.60338 65.9977L16.1776 49.679L16.7043 49.0458L16.6324 48.2252L14.7437 26.6935L34.7177 21.9984L35.5699 21.798L36.0009 21.036L46.443 2.57227L65.1795 11.0011L66 11.3702L66.8205 11.0011L85.5548 2.57327L95.9978 21.0965L96.4269 21.8577L97.277 22.06L117.256 26.8143L115.368 48.2876Z"
+            stroke="#F8F200" stroke-width="4" />
+        </svg>
+        <h2 class="draw__title">Играй и выигрывай!</h2>
+        <p class="draw__text">Играй в Cyberpunk 2077 и получи возможность выиграть консоль Xbox Series X или Sony
+          PlayStation 5! Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1
+          февраля. Удачи!</p>
+      </div>
+
+      <div class="draw__wrapper">
+        <form class="draw__form">
+          <label class="draw__lable-name">
+            <input type="text" name="" id="">
+          </label>
+          <label> class="draw__lable-email">
+            <input type="email" name="" id="">
+          </label>
+          <!-- <div class="draw__sen-file"> -->
+          <label for="" class="draw__label-file">
+            <input type="file" name="" id="">
+          </label>
+          <!-- </div> -->
+          <button class="draw__btn">Отправить</button>
+          <label for="" class="draw__label-check">
+            <input type="checkbox" name="" id="">
+          </label>
+        </form>
+
+        <!-- Бокс с картинками -->
+        <div class="draw__img-container">
+          <div class="draw__img-layer-1">
+            <img src="img/X-box.png" alt="" class="draw__img">
+            <img src="img/PS5.png" alt="" class="draw__img">
+            <div class="draw__img-layer-2">
+              <img src="img/bgc-yellow.png" alt="" class="draw__img">
+              <img src="img/bgc-blue.png" alt="" class="draw__img">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
 </body>
 
